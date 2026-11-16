@@ -116,6 +116,17 @@
   .cta p{color:#f3cbdd;max-width:520px;margin:0 auto 24px;font-size:15px}
   .cta .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
+  .hero-art .frame img{width:100%;height:100%;object-fit:cover;border-radius:150px 150px 10px 10px;display:block}
+  .card .photo{height:160px;border-radius:12px;overflow:hidden;margin-bottom:16px}
+  .card .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .about-img{width:100%;height:158px;object-fit:cover;border-radius:14px;border:1px solid rgba(244,167,195,.4);display:block}
+  .gal{padding:14px 12px 18px}
+  .gal img{width:100%;height:150px;object-fit:cover;border-radius:10px;margin-bottom:12px;display:block}
+  .shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .shop-grid figure{border:1px solid #f6d7e4;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(143,37,96,.06)}
+  .shop-grid img{width:100%;height:230px;object-fit:cover;display:block}
+  .shop-grid figcaption{padding:12px 14px;text-align:center;font-size:13.5px;color:var(--muted)}
+
   /* Footer */
   footer{padding:26px 18px 96px;text-align:center;color:var(--muted);font-size:13.5px}
 
@@ -133,9 +144,10 @@
     .grid{grid-template-columns:1fr 1fr}
     .why-grid,.gal-grid{grid-template-columns:1fr 1fr}
     .about-in,.info-grid{grid-template-columns:1fr}
+    .shop-grid{grid-template-columns:1fr 1fr}
   }
   @media(max-width:540px){
-    .grid{grid-template-columns:1fr}
+    .grid,.shop-grid{grid-template-columns:1fr}
     .brand h1{font-size:16.5px}
     .call-btn{padding:9px 13px;font-size:13px}
     section{padding:48px 16px}
@@ -177,20 +189,7 @@
     </div>
     <div class="hero-art">
       <div class="frame">
-        <svg viewBox="0 0 200 240" fill="none">
-          <!-- dress silhouette -->
-          <path d="M100 22 c-7 0 -11 5 -11 10 0 4 2 6 3 9 l-7 26 c-1 4 1 6 4 8 l-14 62 c-1.5 7 3 11 25 11 s26.5 -4 25 -11 l-14 -62 c3 -2 5 -4 4 -8 l-7 -26 c1 -3 3 -5 3 -9 0 -5 -4 -10 -11 -10z" fill="#8f2560" stroke="#f4a7c3" stroke-width="2" stroke-linejoin="round"/>
-          <path d="M85 75 h30 M81 105 h38 M78 128 h44" stroke="#d4af6a" stroke-width="2" stroke-dasharray="5 4" opacity=".9"/>
-          <path d="M100 44 c4 5 4 9 0 13 c-4 -4 -4 -8 0 -13z" fill="#e56b9a"/>
-          <circle cx="100" cy="88" r="3" fill="#f4a7c3"/><circle cx="100" cy="116" r="3" fill="#f4a7c3"/>
-          <!-- hanger -->
-          <path d="M100 8 a5 5 0 1 1 5 5" stroke="#f4a7c3" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-          <!-- sparkles & flowers -->
-          <path d="M34 40 l2 5.4 5.4 2 -5.4 2 -2 5.4 -2 -5.4 -5.4 -2 5.4 -2z" fill="#ffd9e8"/>
-          <path d="M168 60 l1.8 4.6 4.6 1.8 -4.6 1.8 -1.8 4.6 -1.8 -4.6 -4.6 -1.8 4.6 -1.8z" fill="#ffd9e8" opacity=".85"/>
-          <circle cx="160" cy="150" r="4" fill="#e56b9a"/><circle cx="168" cy="158" r="4" fill="#f4a7c3"/><circle cx="152" cy="158" r="4" fill="#f4a7c3"/><circle cx="160" cy="157" r="2.4" fill="#d4af6a"/>
-          <circle cx="38" cy="168" r="3.4" fill="#e56b9a"/><circle cx="45" cy="175" r="3.4" fill="#f4a7c3"/><circle cx="31" cy="175" r="3.4" fill="#f4a7c3"/><circle cx="38" cy="174" r="2" fill="#d4af6a"/>
-        </svg>
+        <img src="img1.jpg" alt="Bride in a pink designer lehenga from Renu Boutique, Faridabad">
       </div>
     </div>
   </div>
@@ -207,31 +206,37 @@
     </div>
     <div class="grid">
       <div class="card">
+        <div class="photo"><img src="img8.jpg" alt="Woman in an elegant cream embroidered designer outfit"></div>
         <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.7"><path d="M9 3 4 6l2 4 2-1v12h8V9l2 1 2-4-5-3a3 3 0 0 1-6 0z" stroke-linejoin="round"/></svg></div>
         <h3>Designer Suits</h3>
         <p>Straight suits, Anarkalis, palazzo sets and festive styles — fresh designs that blend comfort with elegance.</p>
       </div>
       <div class="card">
+        <div class="photo"><img src="img2.jpg" alt="Bride in a deep red designer lehenga"></div>
         <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.7"><path d="M9 3h6l1 5 3 13H5L8 8l1-5z" stroke-linejoin="round"/><path d="M5 21h14M8.5 12h7" stroke-linecap="round"/></svg></div>
         <h3>Lehengas &amp; Gowns</h3>
         <p>Twirl-worthy lehengas and graceful gowns for sangeet, receptions and every celebration in between.</p>
       </div>
       <div class="card">
+        <div class="photo"><img src="img7.jpg" alt="Embroidered bridal lehenga on display"></div>
         <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.7"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8 3.6 4.9 6.9 4.9c2 0 3.9 1.1 5.1 2.9 1.2-1.8 3.1-2.9 5.1-2.9 3.3 0 5.6 3.1 4.2 6.9C19.5 16.4 12 21 12 21z" stroke-linejoin="round"/></svg></div>
         <h3>Bridal &amp; Party Wear</h3>
         <p>Outfits for the bride, her family and every guest who wants to shine — designed around your occasion and theme.</p>
       </div>
       <div class="card">
+        <div class="photo"><img src="img5.jpg" alt="Close-up of stitching on a sewing machine"></div>
         <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.7"><circle cx="6" cy="7" r="2.6"/><circle cx="6" cy="17" r="2.6"/><path d="M8.2 8.8 20 19M8.2 15.2 20 5" stroke-linecap="round"/></svg></div>
         <h3>Custom Stitching &amp; Tailoring</h3>
         <p>Bring your fabric and your idea — we stitch suits, blouses, lehengas and dresses to your exact measurements and style.</p>
       </div>
       <div class="card">
+        <div class="photo"><img src="img4.jpg" alt="Embroidered dress material fabric in deep red"></div>
         <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.7"><path d="M4 8c3-2 5-2 8 0 3-2 5-2 8 0v10c-3-2-5-2-8 0-3-2-5-2-8 0V8z" stroke-linejoin="round"/><path d="M12 6v12" /></svg></div>
         <h3>Dress Materials</h3>
         <p>A lovely range of dress materials and fabrics to choose from — pick your favourite and get it stitched with us.</p>
       </div>
       <div class="card">
+        <div class="photo"><img src="img6.jpg" alt="Mannequin with measuring tape for custom fitting"></div>
         <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.7"><path d="M14.5 4.5a4 4 0 0 1 5 5L9 20H4v-5L14.5 4.5z" stroke-linejoin="round"/><path d="M12.5 6.5l5 5" /></svg></div>
         <h3>Alterations &amp; Finishing</h3>
         <p>Fitting adjustments, fall and pico, lace and border work — the small finishing touches that make an outfit perfect.</p>
@@ -250,23 +255,38 @@
       <p>Have a design saved on your phone? Bring it along — or call or WhatsApp us, and let's turn it into your next favourite outfit.</p>
     </div>
     <div class="about-art">
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.6"><circle cx="6" cy="7" r="2.6"/><circle cx="6" cy="17" r="2.6"/><path d="M8.2 8.8 20 19M8.2 15.2 20 5" stroke-linecap="round"/></svg>
-        <b>Made-to-Measure</b><span>Stitched to your fitting</span>
-      </div>
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.6"><path d="M12 3l2.1 4.6L19 8.3l-3.6 3.4 1 4.9L12 14.2l-4.4 2.4 1-4.9L5 8.3l4.9-.7L12 3z" stroke-linejoin="round"/></svg>
-        <b>Fresh Designs</b><span>Styles for every season</span>
-      </div>
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.6"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8 3.6 4.9 6.9 4.9c2 0 3.9 1.1 5.1 2.9 1.2-1.8 3.1-2.9 5.1-2.9 3.3 0 5.6 3.1 4.2 6.9C19.5 16.4 12 21 12 21z" stroke-linejoin="round"/></svg>
-        <b>Made With Care</b><span>Finishing in every stitch</span>
-      </div>
-      <div class="tile">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2" stroke-linecap="round"/></svg>
-        <b>Easy to Reach</b><span>Call or WhatsApp anytime</span>
-      </div>
+      <img class="about-img" src="img3.jpg" alt="Model in a pink floral lehenga - studio collection">
+      <img class="about-img" src="img4.jpg" alt="Hand-embroidery detail on rich red fabric">
+      <img class="about-img" src="img5.jpg" alt="Fine stitching work in progress">
+      <img class="about-img" src="img7.jpg" alt="Bridal lehenga with intricate embroidery on display">
     </div>
+  </div>
+</section>
+
+<!-- ================= VISIT OUR SHOP ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Hamari Dukaan</span>
+      <h2>Visit Our Shop</h2>
+      <p>Come, see the boutique in person — browse the racks, feel the fabrics, and watch your outfit being stitched with care. This is where every Renu Boutique creation begins.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="shop-grid">
+      <figure>
+        <img src="shop1.jpg" alt="Inside Renu Boutique - clothing racks with designer outfits on display">
+        <figcaption>Our boutique floor — fresh designs on the racks, ready for you to explore</figcaption>
+      </figure>
+      <figure>
+        <img src="shop3.jpg" alt="Renu Boutique interior with outfits and accessories on display">
+        <figcaption>A cosy corner of the shop, styled with our latest pieces</figcaption>
+      </figure>
+      <figure>
+        <img src="shop2.jpg" alt="Tailoring area at Renu Boutique - fabric being cut and stitched in-house">
+        <figcaption>Our in-house tailoring area, where your outfit is cut and stitched to fit you</figcaption>
+      </figure>
+    </div>
+    <p style="text-align:center;margin-top:20px;color:var(--muted);font-size:14.5px">Walk in any day of the week — or call us on <a href="tel:+919210458667" style="color:var(--plum3);font-weight:600">+91 92104 58667</a> and we will keep your favourite designs ready to show you.</p>
   </div>
 </section>
 
@@ -313,20 +333,16 @@
       <div class="divider"></div>
     </div>
     <div class="gal-grid">
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.3"><path d="M9 3 4 6l2 4 2-1v12h8V9l2 1 2-4-5-3a3 3 0 0 1-6 0z" stroke-linejoin="round"/></svg>
+      <div class="gal"><img src="img8.jpg" alt="Festive designer suit in cream and gold embroidery">
         <b>Festive Suits</b><span>For poojas &amp; celebrations</span>
       </div>
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.3"><path d="M9 3h6l1 5 3 13H5L8 8l1-5z" stroke-linejoin="round"/><path d="M5 21h14" stroke-linecap="round"/></svg>
+      <div class="gal"><img src="img2.jpg" alt="Bridal lehenga in deep red">
         <b>Bridal Lehengas</b><span>For the big day</span>
       </div>
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.3"><path d="M12 3c-2 3-5 4-5 9a5 5 0 0 0 10 0c0-5-3-6-5-9z" stroke-linejoin="round"/><path d="M9 21h6" stroke-linecap="round"/></svg>
+      <div class="gal"><img src="img3.jpg" alt="Pink lehenga for parties and receptions">
         <b>Evening Gowns</b><span>Parties &amp; receptions</span>
       </div>
-      <div class="gal">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#f4a7c3" stroke-width="1.3"><circle cx="6" cy="7" r="2.6"/><circle cx="6" cy="17" r="2.6"/><path d="M8.2 8.8 20 19M8.2 15.2 20 5" stroke-linecap="round"/></svg>
+      <div class="gal"><img src="img5.jpg" alt="Custom stitching being done on a machine">
         <b>Custom Stitching</b><span>Your fabric, your design</span>
       </div>
     </div>
